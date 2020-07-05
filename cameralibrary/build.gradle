@@ -12,7 +12,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0.1"
+        versionName "1.0.2"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -39,15 +39,15 @@ dependencies {
 
 
 ext {
-    bintrayRepo = 'CameraLibrary'
+    bintrayRepo = 'CameraLibary'
     bintrayName = 'CameraLibrary'
     publishedGroupId = 'com.infoskillstechnology.cameralibrary'
-    libraryName = 'CameraLibrary'
+    libraryName = 'CameraLibary'
     artifact = 'cameralibrary'
     libraryDescription = 'A simple Android wrapper for interfacing with the new Camera2 Library API for video capture.'
     siteUrl = 'https://github.com/infoskillstechnology/Camera'
     gitUrl = 'https://github.com/infoskillstechnology/Camera.git'
-    libraryVersion = '1.0.1'
+    libraryVersion = '1.0.2'
     developerId = 'skbhati199'
     developerName = 'Sonu'
     developerEmail = 'skbhati199@email.com'
