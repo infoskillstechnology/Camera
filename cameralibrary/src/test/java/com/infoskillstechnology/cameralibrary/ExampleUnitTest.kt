@@ -1,4 +1,4 @@
-package com.fluper.cameralibrary
+package com.infoskillstechnology.cameralibrary
 
 import org.junit.Test
 

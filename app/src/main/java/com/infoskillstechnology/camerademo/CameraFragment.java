@@ -1,4 +1,4 @@
-package com.fluper.camerademo;
+package com.infoskillstechnology.camerademo;
 
 import android.annotation.TargetApi;
 import android.content.Context;

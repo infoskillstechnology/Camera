@@ -1,4 +1,4 @@
-package com.fluper.camerademo
+package com.infoskillstechnology.camerademo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

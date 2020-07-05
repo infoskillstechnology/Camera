@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
 android {
     compileSdkVersion 29
@@ -10,7 +12,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -34,3 +36,25 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
+
+
+ext {
+    bintrayRepo = 'CameraLibrary'
+    bintrayName = 'CameraLibrary'
+    publishedGroupId = 'com.infoskillstechnology.cameralibrary'
+    libraryName = 'CameraLibrary'
+    artifact = 'cameralibrary'
+    libraryDescription = 'A simple Android wrapper for interfacing with the new Camera2 Library API for video capture.'
+    siteUrl = 'https://github.com/skbhati199/CameraLibrary'
+    gitUrl = 'https://github.com/skbhati199/CameraLibrary.git'
+    libraryVersion = '1.0.1'
+    developerId = 'skbhati199'
+    developerName = 'Sonu'
+    developerEmail = 'skbhati199@email.com'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

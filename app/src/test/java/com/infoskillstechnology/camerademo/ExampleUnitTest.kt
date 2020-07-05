@@ -1,4 +1,4 @@
-package com.fluper.camerademo
+package com.infoskillstechnology.camerademo
 
 import org.junit.Test
 
